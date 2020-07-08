@@ -1,0 +1,322 @@
+@function rem($value) {
+	@return unquote(($value/1px)/16+"rem");
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 20px;	
+}
+.flex-container-col{
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			align-items: left;
+			justify-content: space-around;
+			flex-direction: column;	
+}
+
+.flex-container>div{
+	width: 300px;
+	margin: 10px;
+	margin-left: 5px;
+}
+.flex-container-large{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	align-items: center;
+	justify-content: center;	
+}
+.flex-container-large>div{
+	width: 300px;
+	margin: 10px;
+	margin-left: 5px;
+}
+/* Start of CSS for Paragraphs text */
+.title{
+		font-size: 3rem;
+		color: #fff;
+		text-align: center;
+		font-weight: 900;
+}
+.title-left{
+		font-size: 2rem;
+		color: #fff;
+		text-align: left;
+		font-weight: 900;
+}
+.title-md{
+			font-size:1.7rem;
+			color: #fff;
+			text-align: left;
+			font-weight: 900;
+}
+.paragraphs{
+		font-size: 1.4rem;
+		color: #fff;
+		padding-top: 10px;
+		
+}
+.paragraphs-footer{
+		font-size: 10px;
+		color: #fff;
+}
+.paragraphs-title{
+		font-size: 1.4rem;
+		color: #fff;
+		padding-top: 20px;
+		font-weight: 900;
+		
+}
+.blockquote{
+	padding-left: 0;
+}
+/* END of CSS for Paragraphs text */
+/* Start of CSS for LOGO */
+.doh_logo{
+			width: 180px;
+			
+}
+.earist_logo{
+			width: 300px;
+			
+}
+.cit_logo{
+			width: 300px;
+			
+}
+.prog_logo{
+			width: 70px;
+			
+}
+.AAA_logo{
+	width: 80px;
+}
+/* END of CSS for LOGO */
+.rounded-circle{
+			width: 90px;
+		}
+.badge{
+	margin-bottom: 10px;
+}
+/* Start of CSS for font-awesome */
+
+.fab:hover {
+	opacity: 0.7;
+}
+.fa-linkedin{
+	color: white;
+}
+/* End of CSS for font-awesome */
+.hr-gold{
+		height: 8px;
+		background-image: linear-gradient(90deg,#D4AF37, transparent);
+		border: 0;
+		height: 3px;
+		width: 100%;
+}
+#pic_center{
+			width: 150px;
+			display: block;
+			margin: 0 auto;
+}
+table{
+			border-collapse: separate;
+			border-spacing: 15px;
+}
+#home-links{
+			margin-top: 5px;
+}
+@media (max-width: 992px){
+		/*Start of Animated hamburger */
+		.icon-bar {
+			width: 22px; 
+			height: 2px;
+			background-color: #B6B6B6;
+			display: block;
+			transition: all 0.2s;
+			margin-top: 4px
+		}
+		 
+		.navbar-toggler {
+		  border: none;
+		  background: transparent !important;
+		}
+		.navbar-toggler .icon-bar.top-bar {
+		  -webkit-transform: rotate(45deg);
+		  -webkit-transform-origin: 10% 10%;
+		
+		}
+		.navbar-toggler .icon-bar.middle-bar {
+		  opacity: 0;
+		}
+		 
+		.navbar-toggler .icon-bar.bottom-bar {
+		  -webkit-transform: rotate(-45deg);
+		  -webkit-transform-origin: 10% 90%;
+		}
+		 
+		.navbar-toggler.collapsed .icon-bar.top-bar {
+		  -webkit-transform: rotate(0);
+		}
+		 
+		.navbar-toggler.collapsed .icon-bar.middle-bar {
+		  opacity: 1;
+		}
+		 
+		.navbar-toggler.collapsed .icon-bar.bottom-bar {
+		 -webkit-transform: rotate(0);
+		}
+		/*  END  */
+		.blockquote{
+			padding-left: 0;
+		}
+		.badge{
+			margin-bottom: 10px;
+		}
+		hr{
+			height: 8px;
+			background-image: linear-gradient(90deg,#C5A028, transparent);
+			border: 0;
+			height: 2px;
+			width: 100%;
+		}
+		.hr-gold{
+			height: 8px;
+			background-image: linear-gradient(90deg,#D4AF37, transparent);
+			border: 0;
+			height: 3px;
+			width: 100%;
+		}
+		.flex-container{
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			align-items: center;
+			justify-content: space-around;
+		}
+		table{
+			border-collapse: separate;
+			border-spacing: 15px;
+		}
+		.flex-container>div{
+			width: 120px;
+			margin: 10px;
+			margin-left: 5px;
+		}
+		.title{
+			font-size:1.4rem;
+			color: #fff;
+			text-align: center;
+			font-weight: 900;
+		}
+		.title-left{
+			font-size:1.4rem;
+			color: #fff;
+			text-align: left;
+			font-weight: 900;
+		}
+		.title-md{
+			font-size:1.2rem;
+			color: #fff;
+			text-align: left;
+			font-weight: 900;
+		}
+		.paragraphs{
+			font-size: 1rem;
+			color: #fff;
+			padding-top: 10px;
+		}
+		.paragraphs-footer{
+			font-size: 1rem;
+			color: #fff;
+		}
+		.paragraphs-title{
+			font-size: 1rem;
+			color: #fff;
+			padding-top: 20px;
+			font-weight: 900;
+		}
+		.doh_logo{
+			width: 70px;
+		}
+		/* Start of CSS for Image */
+		.rounded-circle{
+			width: 70px;
+		}
+		#pic_center{
+			width: 70px;
+			text-align: center;
+		}
+		.earist_logo{
+			width: 120px;
+			
+		}
+		.cit_logo{
+			width: 130px;
+					
+		}
+		.prog_logo{
+			width: 50px;
+			
+		}
+		.AAA_logo{
+			width: 70px;
+		}
+		/* END of CSS for Image */
+		/*  Start Navbar CSS */
+		.mobileMenu {
+			position: fixed;
+			top: 0px;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+			-webkit-transition: all ease 0.25s;
+			transition: all ease 0.25s;
+		}
+		.mobileMenu.open {
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+		}
+		#home-a{
+			margin-right: 60px;
+			margin-left: 60px;
+		}
+		.onRight {
+			left: auto;
+			right: 0;
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+		}
+		.mobileMenu .navbar-nav{
+			overflow-y: auto;
+		}
+		.overlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			background-color: rgba(0,0,0,0.5);
+			display: none;
+		}
+		.overlay.open{
+			display: block;
+		}
+		/*  END Navbar CSS */
+}
